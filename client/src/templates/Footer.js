@@ -1,7 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <div className='footer'>
@@ -33,8 +38,8 @@ export default () => {
             </div>
           </div>
           <div className='footer__bottom'>
-            <div className='footer__copyright'>© 2020, UI8 LLC.</div>
-            <Link className='footer__scroll js-scroll' to='#header'>
+            <div className='footer__copyright'>© 2020, Samtaylek.</div>
+            <Link onClick={scrollToTop} className='footer__scroll js-scroll' to='#header'>
               Back to top
             </Link>
           </div>

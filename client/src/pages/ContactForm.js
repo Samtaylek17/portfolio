@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Footer from "../templates/Footer";
 import { Link } from "react-router-dom";
+import Mailto from "react-protected-mailto";
 import axios from "axios";
+import sprite from "../sprite.svg";
 
 export default () => {
   const [name, setName] = useState("");
@@ -27,7 +29,7 @@ export default () => {
 
   return (
     <>
-      <div className='wrapper wrapper_dark'>
+      <div id='contact' className='wrapper wrapper_dark'>
         <div className='contacts'>
           <div className='contacts__center center'>
             <div className='contacts__container'>
@@ -48,33 +50,35 @@ export default () => {
               </div>
               <div className='contacts__row'>
                 <div className='contacts__details' data-aos='animation-translate-y'>
-                  <Link className='contacts__line' to='mailto:hello@ui8.net'>
-                    <div className='contacts__icon'>
-                      {/* <svg className="icon icon-email">
-                              <use xlink:to="img/sprite.svg#icon-email"></use>
-                            </svg> */}
-                    </div>
-                    <div className='contacts__text'>hello@ui8.net</div>
-                  </Link>
                   <div className='contacts__line'>
                     <div className='contacts__icon'>
-                      {/* <svg className="icon icon-place">
-                              <use xlink:to="img/sprite.svg#icon-place"></use>
-                            </svg> */}
+                      <svg className='icon icon-email'>
+                        <use href={sprite + "#icon-email"}></use>
+                      </svg>
+                    </div>
+                    <Mailto email='ogunsusitemitayo99@gmail.com'></Mailto>
+                  </div>
+
+                  <div className='contacts__line'>
+                    <div className='contacts__icon'>
+                      <svg className='icon icon-place'>
+                        <use href={sprite + "#icon-place"}></use>
+                      </svg>
                     </div>
                     <div className='contacts__text'>
-                      <p>4074 Ebert Summit Suite 375</p>
-                      <p>Lake Leonardchester</p>
+                      <p>61, Fajuyi Road Ile-ife</p>
+                      <p>Osun state, Nigeria.</p>
                     </div>
                   </div>
-                  <Link className='contacts__line' to='tel:+441236547890'>
+                  <div className='contacts__line'>
                     <div className='contacts__icon'>
-                      {/* <svg className="icon icon-phone">
-                              <use xlink:to="img/sprite.svg#icon-phone"></use>
-                            </svg> */}
+                      <svg className='icon icon-phone'>
+                        <use href={sprite + "#icon-phone"}></use>
+                      </svg>
                     </div>
-                    <div className='contacts__text'>+44 123 654 7890</div>
-                  </Link>
+                    <Mailto className='contacts__text' tel='+234 805 411 3760'></Mailto>
+                    {/* <div className='contacts__text'>+234 805 411 3760 </div> */}
+                  </div>
                 </div>
                 <form
                   onSubmit={onSubmit}
@@ -92,9 +96,9 @@ export default () => {
                         placeholder='Name'
                       />
                       <div className='field__icon'>
-                        {/* <svg className="icon icon-profile">
-                                <use xlink:to="img/sprite.svg#icon-profile"></use>
-                              </svg> */}
+                        <svg className='icon icon-profile'>
+                          <use href={sprite + "#icon-profile"}></use>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -109,9 +113,9 @@ export default () => {
                         placeholder='Email'
                       />
                       <div className='field__icon'>
-                        {/* <svg className="icon icon-send">
-                                <use xlink:to="img/sprite.svg#icon-send"></use>
-                              </svg> */}
+                        <svg className='icon icon-send'>
+                          <use href={sprite + "#icon-send"}></use>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -125,9 +129,9 @@ export default () => {
                         placeholder='What are you working on?'
                       />
                       <div className='field__icon'>
-                        {/* <svg className="icon icon-arrows">
-                                <use xlink:to="img/sprite.svg#icon-arrows"></use>
-                              </svg> */}
+                        <svg className='icon icon-arrows'>
+                          <use href={sprite + "#icon-arrows"}></use>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -140,18 +144,18 @@ export default () => {
                         name='message'
                         placeholder='Message'></textarea>
                       <div className='field__icon'>
-                        {/* <svg className="icon icon-message">
-                                <use xlink:to="img/sprite.svg#icon-message"></use>
-                              </svg> */}
+                        <svg className='icon icon-message'>
+                          <use href={sprite + "#icon-message"}></use>
+                        </svg>
                       </div>
                     </div>
                   </div>
                   <div className='contacts__btn'>
                     <button className='btn btn_purple'>
                       <span className='btn__text'>Let’s Talk</span>
-                      {/* <svg className="icon icon-arrow-right">
-                              <use xlink:to="img/sprite.svg#icon-arrow-right"></use>
-                            </svg> */}
+                      <svg className='icon icon-arrow-right'>
+                        <use href={sprite + "#icon-arrow-right"}></use>
+                      </svg>
                     </button>
                   </div>
                 </form>
@@ -160,33 +164,33 @@ export default () => {
               <div className='contacts__social'>
                 <div className='contacts__box' data-aos='animation-translate-y'>
                   <Link className='contacts__link' to='#'>
-                    {/* <svg className="icon icon-instagram">
-                            <use xlink:to="img/sprite.svg#icon-instagram"></use>
-                          </svg> */}
+                    <svg className='icon icon-instagram'>
+                      <use href={sprite + "#icon-instagram"}></use>
+                    </svg>
                     <div className='contacts__text'>Instagram</div>
                   </Link>
                 </div>
                 <div className='contacts__box' data-aos='animation-translate-y' data-aos-delay='150'>
                   <Link className='contacts__link' to='#'>
-                    {/* <svg className="icon icon-instagram">
-                            <use xlink:to="img/sprite.svg#icon-instagram"></use>
-                          </svg> */}
+                    <svg className='icon icon-instagram'>
+                      <use href={sprite + "#icon-instagram"}></use>
+                    </svg>
                     <div className='contacts__text'>Instagram</div>
                   </Link>
                 </div>
                 <div className='contacts__box' data-aos='animation-translate-y' data-aos-delay='300'>
                   <Link className='contacts__link' to='#'>
-                    {/* <svg className="icon icon-instagram">
-                            <use xlink:to="img/sprite.svg#icon-instagram"></use>
-                          </svg> */}
+                    <svg className='icon icon-instagram'>
+                      <use href={sprite + "#icon-instagram"}></use>
+                    </svg>
                     <div className='contacts__text'>Instagram</div>
                   </Link>
                 </div>
                 <div className='contacts__box' data-aos='animation-translate-y' data-aos-delay='450'>
                   <Link className='contacts__link' to='#'>
-                    {/* <svg className="icon icon-instagram">
-                            <use xlink:to="img/sprite.svg#icon-instagram"></use>
-                          </svg> */}
+                    <svg className='icon icon-instagram'>
+                      <use href={sprite + "#icon-instagram"}></use>
+                    </svg>
                     <div className='contacts__text'>Instagram</div>
                   </Link>
                 </div>
@@ -229,8 +233,9 @@ export default () => {
                   <img
                     className='figures__pic js-parallax'
                     data-scale='2'
+                    style={{ width: "80%" }}
                     data-orientation='up'
-                    src='img/figures-6.png'
+                    src='img/PNG/ellipse.png'
                     alt=''
                   />
                 </div>

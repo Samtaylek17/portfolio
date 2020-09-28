@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export default () => {
   return (
@@ -17,7 +17,7 @@ export default () => {
             <div className='work__text' data-aos='animation-scale-y' data-aos-delay='300'>
               I research and create breakthrough - delightful ideas, leading visual designers.
             </div>
-            <Link className='scroll js-scroll' data-aos='animation-scale-y' to='/'>
+            <Link className='scroll js-scroll' data-aos='animation-scale-y' spy={true} smooth={true} to='cases'>
               <div className='scroll__icon'>
                 <img className='scroll__pic' src='img/scroll.svg' alt='' />
               </div>

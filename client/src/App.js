@@ -27,10 +27,9 @@ export default () => {
     }
   };
 
-  var clientX = -100;
-  var clientY = -100;
-
   const initCursor = () => {
+    let clientX = -100;
+    let clientY = -100;
     document.addEventListener("mousemove", (e) => {
       clientX = e.clientX;
       clientY = e.clientY;

@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import sprite from "../sprite.svg";
+import { Link } from "react-scroll";
 
 export default () => {
   return (
@@ -18,12 +19,12 @@ export default () => {
             Create.
           </h2>
           <div className='details__btn' data-aos='animation-translate-y'>
-            <button className='btn btn_purple'>
+            <Link to='contact' smooth={true} className='btn btn_purple'>
               <span className='btn__text'>Contact Me</span>
-              {/* <svg className="icon icon-arrow-right">
-                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                  </svg> */}
-            </button>
+              <svg className='icon icon-arrow-right'>
+                <use href={sprite + "#icon-arrow-right"}></use>
+              </svg>
+            </Link>
           </div>
           <div className='details__container'>
             <div className='details__slider owl-carousel js-slider-details'>
@@ -123,16 +124,16 @@ export default () => {
               className='details__pic js-parallax'
               data-scale='2'
               data-orientation='down'
-              src='img/figure-1.png'
+              src='img/PNG/plant_4.png'
               alt=''
             />
           </div>
           <div className='details__figure'>
             <img
               className='details__pic js-parallax'
-              data-scale='2'
-              data-orientation='up'
-              src='img/figure-2.png'
+              data-scale='3'
+              data-orientation='down'
+              src='img/PNG/plant_2.png'
               alt=''
             />
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
-import { Link } from "react-router-dom";
+import sprite from "../sprite.svg";
+import { Link } from "react-scroll";
 
 export default () => {
   const toggleBurger = () => {
@@ -26,8 +27,10 @@ export default () => {
             </Link>
             <div className='header__social header__social_main'>
               <Link className='header__link' to='#'>
-                {" "}
-                <i className='fab fa-dribbble'></i>&nbsp;&nbsp; <span>Dribbble</span>{" "}
+                <svg className='icon icon-dribbble'>
+                  <use href={sprite + "#icon-dribbble"}></use>
+                </svg>
+                Dribbble
               </Link>
               <Link className='header__link' to='#'>
                 {" "}
@@ -49,17 +52,17 @@ export default () => {
               <div className='header__contacts'>
                 <Link className='header__line' to='mailto:ogunsusitemitayo99@gmail.com'>
                   <div className='header__icon'>
-                    {/* <svg className="icon icon-email">
-                          <use xlink:to="img/sprite.svg#icon-email"></use>
-                        </svg> */}
+                    <svg className='icon icon-email'>
+                      <use href={sprite + "#icon-email"}></use>
+                    </svg>
                   </div>
                   <div className='header__text'>ogunsusitemitayo99@gmail.com</div>
                 </Link>
                 <div className='header__line'>
                   <div className='header__icon'>
-                    {/* <svg className="icon icon-place">
-                          <use xlink:to="img/sprite.svg#icon-place"></use>
-                        </svg> */}
+                    <svg className='icon icon-place'>
+                      <use href={sprite + "#icon-place"}></use>
+                    </svg>
                   </div>
                   <div className='header__text'>
                     <p>61, Fajuyi Road</p>
@@ -68,9 +71,9 @@ export default () => {
                 </div>
                 <Link className='header__line' to='tel:+2348054113760'>
                   <div className='header__icon'>
-                    {/* <svg className="icon icon-phone">
-                          <use xlink:to="img/sprite.svg#icon-phone"></use>
-                        </svg> */}
+                    <svg className='icon icon-phone'>
+                      <use href={sprite + "#icon-phone"}></use>
+                    </svg>
                   </div>
                   <div className='header__text'>+234 805 411 3760</div>
                 </Link>
@@ -91,13 +94,15 @@ export default () => {
               </nav>
               <div className='header__social header__social_inner'>
                 <Link className='header__link' to='#'>
-                  {/* <svg className="icon icon-dribbble">
-                        <use xlink:to="img/sprite.svg#icon-dribbble"></use></svg> */}
+                  <svg className='icon icon-dribbble'>
+                    <use href={sprite + "#icon-dribbble"}></use>
+                  </svg>
                   Dribbble
                 </Link>
                 <Link className='header__link' to='#'>
-                  {/* <svg className="icon icon-instagram">
-                        <use xlink:to="img/sprite.svg#icon-instagram"></use></svg> */}
+                  <svg className='icon icon-instagram'>
+                    <use href={sprite + "#icon-instagram"}></use>
+                  </svg>
                   Instagram
                 </Link>
               </div>
@@ -130,7 +135,14 @@ export default () => {
                 />
               </span>
             </h1>
-            <Link className='scroll js-scroll' to='#details' data-aos='transform'>
+            <Link
+              activeClass='active'
+              spy={true}
+              smooth={true}
+              duration={500}
+              className='scroll js-scroll'
+              to='details'
+              data-aos='transform'>
               <div className='scroll__icon'>
                 <img className='scroll__pic' src='img/scroll.svg' alt='' />
               </div>
@@ -145,18 +157,18 @@ export default () => {
           <div className='main__preview'>
             <img
               className='main__pic js-parallax'
-              data-scale='2.5'
-              data-orientation='up'
-              src='img/main-pic.png'
+              data-scale='1.5'
+              data-orientation='down'
+              src='img/pic-main-1.png'
               alt=''
             />
           </div>
           <div className='main__preview'>
             <img
               className='main__pic js-parallax'
-              data-scale='1.5'
-              data-orientation='up'
-              src='img/PNG/cone.png'
+              data-scale='3.5'
+              data-orientation='down'
+              src='img/main-pic-2.png'
               alt=''
             />
           </div>
@@ -191,7 +203,7 @@ export default () => {
               className='main__pic js-parallax'
               data-scale='2.2'
               data-orientation='down'
-              src='img/PNG/code_1.png'
+              src='img/figure-1.png'
               alt=''
             />
           </div>
@@ -200,12 +212,12 @@ export default () => {
               className='main__pic js-parallax'
               data-scale='2.2'
               data-orientation='up'
-              src='img/PNG/gear_2.png'
+              src='img/PNG/dumbbell.png'
               alt=''
             />
           </div>
-          <div className='main__figure' data-aos='animation-translate-y' data-aos-delay='400'>
-            <img className='main__pic' src='img/PNG/cone.png' alt='' />
+          <div className='main__figure' data-aos='animation-translate-y' data-aos-delay='200'>
+            <img className='main__pic' src='img/PNG/cup_1.png' alt='' />
           </div>
         </div>
       </div>
