@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom-modal.css"],"names":[],"mappings":"AAAA,aACE,kBAAmB,CACnB,eAAgB,CAChB,UACF","file":"main.eaa01a2b.chunk.css","sourcesContent":[".customModal {\r\n  background: #1a1c27;\r\n  max-width: 500px;\r\n  color: #fff;\r\n}\r\n"]}
