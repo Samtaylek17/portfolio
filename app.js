@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 
 const globalErrorHandler = require('./controllers/errorController');
 const messageRouter = require('./routes/messageRoutes');
-const viewRouter = require('./routes/viewRoute');
+// const viewRouter = require('./routes/viewRoute');
 
 const app = express();
 app.use(bodyParser.json());
@@ -53,7 +53,7 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.use('/', viewRouter);
+// app.use('/', viewRouter);
 app.use('/api/messages', messageRouter);
 
 // Serve static assets if in production
