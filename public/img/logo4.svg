@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="437" height="108" viewBox="0 0 437 108">
+  <g id="Group_13" data-name="Group 13" transform="translate(-303 -35)">
+    <g id="Group_12" data-name="Group 12" transform="translate(159.052 22)">
+      <text id="SAMTAYLEK." transform="translate(254.948 94)" fill="#2d2c2c" font-size="39" font-family="Poppins-Bold, Poppins" font-weight="700" letter-spacing="0.2em"><tspan x="0" y="0">SAMTAYLEK</tspan><tspan y="0" fill="red" font-size="77" letter-spacing="0.5em">.</tspan></text>
+    </g>
+    <g id="Group_11" data-name="Group 11" transform="translate(165.052 -82.83)">
+      <path id="Icon_awesome-angle-left" data-name="Icon awesome-angle-left" d="M.96,19.038,19.508.938a3.317,3.317,0,0,1,4.623,0l3.082,3.008a3.127,3.127,0,0,1,0,4.512L14.08,21.3,27.227,34.13a3.127,3.127,0,0,1,0,4.512l-3.082,3.021a3.317,3.317,0,0,1-4.623,0L.973,23.563A3.131,3.131,0,0,1,.96,19.038Z" transform="translate(137.948 159.192)" fill="#191c87"/>
+      <path id="Icon_awesome-angle-right" data-name="Icon awesome-angle-right" d="M27.212,23.557,8.647,41.674a3.318,3.318,0,0,1-4.626,0L.939,38.668a3.129,3.129,0,0,1,0-4.514L14.1,21.313.952,8.483a3.128,3.128,0,0,1,0-4.514L4.026.932a3.318,3.318,0,0,1,4.626,0L27.2,19.03a3.133,3.133,0,0,1,.012,4.527Z" transform="translate(201.444 172.389) rotate(1)" fill="#191c87"/>
+      <line id="Line_6" data-name="Line 6" x2="69.193" y2="0.738" transform="translate(199.646 157.199) rotate(120)" fill="none" stroke="#ff3030" stroke-width="10"/>
+    </g>
+  </g>
+</svg>
