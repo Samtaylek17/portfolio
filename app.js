@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 
 const globalErrorHandler = require('./controllers/errorController');
 const messageRouter = require('./routes/messageRoutes');
-// const viewRouter = require('./routes/viewRoute');
+const viewRouter = require('./routes/viewRoute');
 
 dotenv.config({ path: './config.env' });
 
