@@ -2,29 +2,47 @@ import React, { useState } from "react";
 import Footer from "../templates/Footer";
 import { Link } from "react-router-dom";
 import Mailto from "react-protected-mailto";
+import "react-responsive-modal/styles.css";
+import "./custom-modal.css";
+import { Modal } from "react-responsive-modal";
 import axios from "axios";
 import sprite from "../sprite.svg";
+
+
 
 export default () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [project, setProject] = useState("");
   const [description, setDescription] = useState("");
+  const [open, setOpen] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
 
-    await axios.post("http://localhost:4005/api/messages", {
-      name,
-      email,
-      project,
-      description,
-    });
+    await axios
+      .post("http://localhost:4005/api/messages", {
+        name,
+        email,
+        project,
+        description,
+      })
+      .then((res) => {
+        if (res.status === 201 && res.data.status === "success") {
+          setOpen(true);
+        }
+
+        console.log(res);
+      });
 
     setName("");
     setEmail("");
     setProject("");
     setDescription("");
+
+    setTimeout(() => {
+      setOpen(false);
+    }, 3000);
   };
 
   return (
@@ -159,6 +177,15 @@ export default () => {
                     </button>
                   </div>
                 </form>
+                {/* <button className='button' onClick={() => setOpen(true)}>
+                  Open Modal
+                </button> */}
+                <Modal open={open} onClose={() => setOpen(false)} center classNames={{modal: 'customModal'}}>
+                  <h2>Message Sent</h2>
+                  <p>
+                    Your message has been delivered, and we'll get back to you shortly.
+                  </p>
+                </Modal>
               </div>
               <div className='contacts__category h5'>Let’s connect</div>
               <div className='contacts__social'>
@@ -243,6 +270,7 @@ export default () => {
             </div>
           </div>
         </div>
+
         <Footer />
       </div>
     </>

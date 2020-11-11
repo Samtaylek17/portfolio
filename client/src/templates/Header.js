@@ -23,7 +23,7 @@ export default () => {
         <div className='header js-header' id='header'>
           <div className='header__center center'>
             <Link className='header__logo' to='index-2.html'>
-              <img className='header__pic' src='img/logo3.svg' alt='' />
+              <img className='header__pic' src='img/logo-main.svg' alt='' />
             </Link>
             <div className='header__social header__social_main'>
               <Link className='header__link' to='#'>
@@ -42,7 +42,7 @@ export default () => {
           <div className='header__wrapper js-header-wrapper'>
             <div className='header__preview'>
               <Link className='header__logo' to='index-2.html'>
-                <img className='header__pic' src='img/logo-white.svg' alt='' />
+                <img className='header__pic' src='img/white-logo.svg' alt='' />
               </Link>
               <div className='header__img'>
                 <img className='header__pic' src='img/bg-header.png' alt='' />

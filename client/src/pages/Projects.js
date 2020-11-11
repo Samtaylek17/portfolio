@@ -17,17 +17,81 @@ export default () => {
             </h2>
             <TabList>
               <div className='cases__nav' data-aos='animation-scale-y' data-aos-delay='300'>
-                <Tab className='cases__link' to='#' id='defaultOpen'>
-                  Designs
-                </Tab>
-                <Tab className='cases__link' to='#'>
-                  Tools & Technologies
-                </Tab>
-                <Tab className='cases__link' to='#'>
+                <Tab className='cases__link' id='defaultOpen'>
                   Websites
                 </Tab>
+                <Tab className='cases__link'>Designs</Tab>
+                <Tab className='cases__link'>Tools and Technologies</Tab>
               </div>
             </TabList>
+            <TabPanel>
+              <div
+                id='mobile'
+                className='cases__list js-owl'
+                data-items-mobile-portrait='1'
+                data-items-mobile-album='1'
+                data-autoheight>
+                <Link
+                  className='cases__item'
+                  data-aos='animation-translate-y'
+                  data-aos-delay=''
+                  to={{ pathname: "https://react-messaging-app-fb8ca.firebaseapp.com/" }}
+                  target='_blank'>
+                  <div className='cases__preview'>
+                    <img className='cases__pic' src='img/teamify.png' alt='' />
+                    <div className='cases__box'>
+                      Case <br />
+                      Study
+                    </div>
+                  </div>
+                  <div className='cases__body'>
+                    <h4 className='cases__info h4'>React Dev Chat</h4>
+                    <div className='cases__text'>A chat app that allow teams communicate.</div>
+                  </div>{" "}
+                </Link>
+                <Link
+                  className='cases__item'
+                  data-aos='animation-translate-y'
+                  data-aos-delay='200'
+                  to={{ pathname: "http://rumi.africa/" }}
+                  target='_blank'>
+                  <div className='cases__preview'>
+                    <img className='cases__pic' src='img/rumi.png' alt='' />
+                    <div className='cases__box'>
+                      Case <br />
+                      Study
+                    </div>
+                  </div>
+                  <div className='cases__body'>
+                    <h4 className='cases__info h4'>Rumi Africa</h4>
+                    <div className='cases__text'>
+                      A platform to find someone to split your rent with. Find a roommate.
+                    </div>
+                  </div>{" "}
+                </Link>
+                <Link
+                  className='cases__item'
+                  data-aos='animation-translate-y'
+                  data-aos-delay=''
+                  to={{ pathname: "https://diylaw.ng/" }}
+                  target='_blank'>
+                  <div className='cases__preview'>
+                    <img className='cases__pic' src='img/diylaw.png' alt='' />
+                    <div className='cases__box'>
+                      Case <br />
+                      Study
+                    </div>
+                  </div>
+                  <div className='cases__body'>
+                    <h4 className='cases__info h4'>DIYlaw</h4>
+                    <div className='cases__text'>
+                      DIYlaw is a platform enabling simple and convenient legal service based on user preference.
+                    </div>
+                  </div>{" "}
+                </Link>
+              </div>
+            </TabPanel>
+
             <TabPanel>
               <div
                 id='website'
@@ -43,10 +107,10 @@ export default () => {
                       Study
                     </div>
                   </div>
-                  <div className='cases__body'>
+                  {/* <div className='cases__body'>
                     <h4 className='cases__info h4'>Collab Landing Page</h4>
                     <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>{" "}
+                  </div>{" "} */}
                 </Link>
                 <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='200' to='case.html'>
                   <div className='cases__preview'>
@@ -56,10 +120,10 @@ export default () => {
                       Study
                     </div>
                   </div>
-                  <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>{" "}
+                  {/* <div className='cases__body'>
+                    <h4 className='cases__info h4'>Arty</h4>
+                    <div className='cases__text'>A platform to allow designers showcase their works</div>
+                  </div>{" "} */}
                 </Link>
                 <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='' to='case.html'>
                   <div className='cases__preview'>
@@ -69,10 +133,10 @@ export default () => {
                       Study
                     </div>
                   </div>
-                  <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
+                  {/* <div className='cases__body'>
+                    <h4 className='cases__info h4'>A simple game design</h4>
                     <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>{" "}
+                  </div>{" "} */}
                 </Link>
                 <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='200' to='case.html'>
                   <div className='cases__preview'>
@@ -82,10 +146,10 @@ export default () => {
                       Study
                     </div>
                   </div>
-                  <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>{" "}
+                  {/* <div className='cases__body'>
+                    <h4 className='cases__info h4'>A sample Neumorphic design</h4>
+                    <div className='cases__text'></div>
+                  </div>{" "} */}
                 </Link>
                 <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='' to='case.html'>
                   <div className='cases__preview'>
@@ -95,10 +159,10 @@ export default () => {
                       Study
                     </div>
                   </div>
-                  <div className='cases__body'>
+                  {/* <div className='cases__body'>
                     <h4 className='cases__info h4'>Collab Landing Page</h4>
                     <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>{" "}
+                  </div>{" "} */}
                 </Link>
                 <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='200' to='case.html'>
                   <div className='cases__preview'>
@@ -108,10 +172,10 @@ export default () => {
                       Study
                     </div>
                   </div>
-                  <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>
+                  {/* <div className='cases__body'> */}
+                  {/* <h4 className='cases__info h4'>A simple dashboard design</h4> */}
+                  {/* <div className='cases__text'>UI Kit, Coded Template</div> */}
+                  {/* </div> */}
                 </Link>
               </div>
             </TabPanel>
@@ -124,167 +188,47 @@ export default () => {
                 data-autoheight>
                 <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='' to='case.html'>
                   <div className='cases__preview'>
-                    <img className='cases__pic' src='img/cases-pic-1.jpg' alt='' />
+                    <img className='cases__pic' src='img/languages.png' alt='' />
                     <div className='cases__box'>
                       Case <br />
                       Study
                     </div>
                   </div>
                   <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
+                    <h4 className='cases__info h4'>Programming Languages</h4>
+                    <div className='cases__text'>
+                      I really love JavaScript and it is my favourite of the programming languages. Python is cool, PHP
+                      and Typescript are awesome too.
+                    </div>
                   </div>{" "}
                 </Link>
                 <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='200' to='case.html'>
                   <div className='cases__preview'>
-                    <img className='cases__pic' src='img/cases-pic-2.jpg' alt='' />
+                    <img className='cases__pic' src='img/frameworks.png' alt='' />
                     <div className='cases__box'>
                       Case <br />
                       Study
                     </div>
                   </div>
                   <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>{" "}
-                </Link>
-                {/* <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='' to='case.html'>
-              <div className='cases__preview'>
-                <img className='cases__pic' src='img/cases-pic-3.jpg' alt='' />
-                <div className='cases__box'>
-                  Case <br />
-                  Study
-                </div>
-              </div>
-              <div className='cases__body'>
-                <h4 className='cases__info h4'>Collab Landing Page</h4>
-                <div className='cases__text'>UI Kit, Coded Template</div>
-              </div>{" "}
-            </Link>
-            <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='200' to='case.html'>
-              <div className='cases__preview'>
-                <img className='cases__pic' src='img/cases-pic-4.jpg' alt='' />
-                <div className='cases__box'>
-                  Case <br />
-                  Study
-                </div>
-              </div>
-              <div className='cases__body'>
-                <h4 className='cases__info h4'>Collab Landing Page</h4>
-                <div className='cases__text'>UI Kit, Coded Template</div>
-              </div>{" "}
-            </Link>
-            <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='' to='case.html'>
-              <div className='cases__preview'>
-                <img className='cases__pic' src='img/cases-pic-5.jpg' alt='' />
-                <div className='cases__box'>
-                  Case <br />
-                  Study
-                </div>
-              </div>
-              <div className='cases__body'>
-                <h4 className='cases__info h4'>Collab Landing Page</h4>
-                <div className='cases__text'>UI Kit, Coded Template</div>
-              </div>{" "}
-            </Link> */}
-                <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='200' to='case.html'>
-                  <div className='cases__preview'>
-                    <img className='cases__pic' src='img/cases-pic-6.jpg' alt='' />
-                    <div className='cases__box'>
-                      Case <br />
-                      Study
+                    <h4 className='cases__info h4'>Frameworks</h4>
+                    <div className='cases__text'>
+                      I am proficient with Django and NodeJS(express) for server side development, React and Angular for
+                      Client side development. I'm cool with any CSS framework but my favourite is MDBootstrap.
                     </div>
-                  </div>
-                  <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>
-                </Link>
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div
-                id='mobile'
-                className='cases__list js-owl'
-                data-items-mobile-portrait='1'
-                data-items-mobile-album='1'
-                data-autoheight>
-                <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='' to='case.html'>
-                  <div className='cases__preview'>
-                    <img className='cases__pic' src='img/cases-pic-1.jpg' alt='' />
-                    <div className='cases__box'>
-                      Case <br />
-                      Study
-                    </div>
-                  </div>
-                  <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
                   </div>{" "}
                 </Link>
                 <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='200' to='case.html'>
                   <div className='cases__preview'>
-                    <img className='cases__pic' src='img/cases-pic-2.jpg' alt='' />
+                    <img className='cases__pic' src='img/design.png' alt='' />
                     <div className='cases__box'>
                       Case <br />
                       Study
                     </div>
                   </div>
                   <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>{" "}
-                </Link>
-                <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='' to='case.html'>
-                  <div className='cases__preview'>
-                    <img className='cases__pic' src='img/cases-pic-3.jpg' alt='' />
-                    <div className='cases__box'>
-                      Case <br />
-                      Study
-                    </div>
-                  </div>
-                  <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>{" "}
-                </Link>
-                <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='200' to='case.html'>
-                  <div className='cases__preview'>
-                    <img className='cases__pic' src='img/cases-pic-4.jpg' alt='' />
-                    <div className='cases__box'>
-                      Case <br />
-                      Study
-                    </div>
-                  </div>
-                  <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>{" "}
-                </Link>
-                <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='' to='case.html'>
-                  <div className='cases__preview'>
-                    <img className='cases__pic' src='img/cases-pic-5.jpg' alt='' />
-                    <div className='cases__box'>
-                      Case <br />
-                      Study
-                    </div>
-                  </div>
-                  <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
-                  </div>{" "}
-                </Link>
-                <Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='200' to='case.html'>
-                  <div className='cases__preview'>
-                    <img className='cases__pic' src='img/cases-pic-6.jpg' alt='' />
-                    <div className='cases__box'>
-                      Case <br />
-                      Study
-                    </div>
-                  </div>
-                  <div className='cases__body'>
-                    <h4 className='cases__info h4'>Collab Landing Page</h4>
-                    <div className='cases__text'>UI Kit, Coded Template</div>
+                    <h4 className='cases__info h4'>Design Tools</h4>
+                    <div className='cases__text'>Yeah, I love designing with these tools</div>
                   </div>
                 </Link>
               </div>

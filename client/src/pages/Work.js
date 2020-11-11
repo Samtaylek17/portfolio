@@ -9,13 +9,18 @@ export default () => {
         <div className='work__center center'>
           <div className='work__wrap'>
             <div className='work__stage stage stage_pink' data-aos='animation-scale-y'>
-              Who I Work With
+              About Me
             </div>
             <h2 className='work__title title h1' data-aos='animation-scale-y' data-aos-delay='150'>
               Art Direction for Global Leading Brands.
             </h2>
             <div className='work__text' data-aos='animation-scale-y' data-aos-delay='300'>
-              I research and create breakthrough - delightful ideas, leading visual designers.
+              I've spent the past 5 years working across different areas of digital design and development; client-side
+              development, server-side development, and UI/UX. I am a passionate learner who's never afraid to face new
+              challenges. I take great delight in self-development which is evident in the skills I possess which has
+              been through self-learning. <br />
+              <br />
+              When I'm not with my computer, you'll find me playing mobile games and gisting with friends 😉
             </div>
             <Link className='scroll js-scroll' data-aos='animation-scale-y' spy={true} smooth={true} to='cases'>
               <div className='scroll__icon'>

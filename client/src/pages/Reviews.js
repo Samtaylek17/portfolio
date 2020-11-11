@@ -21,7 +21,7 @@ export default () => {
                 </div>
                 <div className='review__author'>
                   <div className='review__ava'>
-                    <img className='review__pic' src='img/ava-1.jpg' alt='' />
+                    <img className='review__pic' src='img/ava-2.png' alt='' />
                   </div>
                   <div className='review__details'>
                     <div className='review__man h5'>Dash</div>
@@ -36,7 +36,7 @@ export default () => {
                 </div>
                 <div className='review__author'>
                   <div className='review__ava'>
-                    <img className='review__pic' src='img/ava-1.jpg' alt='' />
+                    <img className='review__pic' src='img/ava-2.png' alt='' />
                   </div>
                   <div className='review__details'>
                     <div className='review__man h5'>Dash</div>
@@ -51,7 +51,7 @@ export default () => {
                 </div>
                 <div className='review__author'>
                   <div className='review__ava'>
-                    <img className='review__pic' src='img/ava-1.jpg' alt='' />
+                    <img className='review__pic' src='img/ava-2.png' alt='' />
                   </div>
                   <div className='review__details'>
                     <div className='review__man h5'>Dash</div>
@@ -66,7 +66,7 @@ export default () => {
                 </div>
                 <div className='review__author'>
                   <div className='review__ava'>
-                    <img className='review__pic' src='img/ava-1.jpg' alt='' />
+                    <img className='review__pic' src='img/ava-2.png' alt='' />
                   </div>
                   <div className='review__details'>
                     <div className='review__man h5'>Dash</div>

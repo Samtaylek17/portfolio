@@ -13,7 +13,7 @@ export default () => {
         <div className='footer__center center'>
           <div className='footer__body'>
             <Link className='footer__logo' to='index-2.html'>
-              <img className='footer__pic' src='img/logo-empty.svg' alt='' />
+              <img className='footer__pic' src='img/white-logo-empty.svg' alt='' />
             </Link>
             <div className='footer__wrap'>
               <div className='footer__title h1'>You only have one chance to make a first impression.</div>

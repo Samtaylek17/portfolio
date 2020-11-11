@@ -9,17 +9,20 @@ const bodyParser = require('body-parser');
 
 const globalErrorHandler = require('./controllers/errorController');
 const messageRouter = require('./routes/messageRoutes');
+const viewRouter = require('./routes/viewRoute');
 
 const app = express();
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
-// app.use(function(req, res, next) {
-//     if (req.secure) {
-//       next();
-//     } else {
-//       res.redirect(`https://${req.headers.host}${req.url}`);
-//     }
-//   });
+// Remember to uncomment this block of code when pushing to production
+
+// app.use(function (req, res, next) {
+// 	if (req.secure) {
+// 		next();
+// 	} else {
+// 		res.redirect(`https://${req.headers.host}${req.url}`);
+// 	}
+// });
 
 app.enable('trust proxy');
 
@@ -35,10 +38,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet());
 
 const limiter = rateLimit({
-    max: 100,
-    windowMs: 60 * 60 * 1000,
-    message: 'Too many requests from this IP, please try again in an hour!'
-  });
+	max: 100,
+	windowMs: 60 * 60 * 1000,
+	message: 'Too many requests from this IP, please try again in an hour!',
+});
 app.use('/api', limiter);
 
 app.use(mongoSanitize());
@@ -46,12 +49,12 @@ app.use(mongoSanitize());
 app.use(xss());
 
 app.use((req, res, next) => {
-    req.requestTime = new Date().toISOString();
-    next();
-  });
+	req.requestTime = new Date().toISOString();
+	next();
+});
 
+app.use('/', viewRouter);
 app.use('/api/messages', messageRouter);
-
 
 // app.all('*', (req, res, next) => {
 //     res.status(404).render('error-page', {

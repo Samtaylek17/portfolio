@@ -29,16 +29,16 @@ export default () => {
           <div className='details__container'>
             <div className='details__slider owl-carousel js-slider-details'>
               <div className='details__item'>
-                <div className='details__preview details__preview_cursor' data-aos='animation-scale'>
+                <div className='details__preview details__preview_color' data-aos='animation-scale'>
                   <div className='details__img'>
-                    <img className='details__pic' src='img/cursor.png' alt='' />
+                    <img className='details__pic' src='img/color-picker.png' alt='' />
                   </div>
                 </div>
                 <h5 className='details__category h5' data-aos='animation-scale-y'>
-                  User Interface
+                  UI/UX Design
                 </h5>
                 <div className='details__text' data-aos='animation-scale-y'>
-                  We have got quite a few already made templates for better project management that you can use now.
+                  I take great pleasure in delivering next-level User interface designs.
                 </div>
                 <div className='details__btn' data-aos='animation-scale-y'>
                   <button className='btn btn_dark'>Find out more</button>
@@ -47,20 +47,40 @@ export default () => {
               <div className='details__item'>
                 <div className='details__preview details__preview_hand' data-aos='animation-scale' data-aos-delay='150'>
                   <div className='details__img'>
-                    <img className='details__pic' src='img/hand.png' alt='' />
+                    <img className='details__pic' src='img/PNG/laptop_2.png' alt='' />
                   </div>
                 </div>
                 <h5 className='details__category h5' data-aos='animation-scale-y' data-aos-delay='150'>
-                  User Experience
+                  Web development
                 </h5>
                 <div className='details__text' data-aos='animation-scale-y' data-aos-delay='150'>
-                  We have got quite a few already made templates for better project management that you can use now.
+                  I develop clean, modern designs - optimized for performance, search engines, and converting users to
+                  customers.
                 </div>
                 <div className='details__btn' data-aos='animation-scale-y' data-aos-delay='150'>
                   <button className='btn btn_dark'>Find out more</button>
                 </div>
               </div>
               <div className='details__item'>
+                <div
+                  className='details__preview details__preview_cloud'
+                  data-aos='animation-scale'
+                  data-aos-delay='300'>
+                  <div className='details__img'>
+                    <img className='details__pic' src='img/cloud.png' alt='' />
+                  </div>
+                </div>
+                <h5 className='details__category h5' data-aos='animation-scale-y' data-aos-delay='300'>
+                  Deployment
+                </h5>
+                <div className='details__text' data-aos='animation-scale-y' data-aos-delay='300'>
+                  We have got quite a few already made templates for better project management that you can use now.
+                </div>
+                <div className='details__btn' data-aos='animation-scale-y' data-aos-delay='300'>
+                  <button className='btn btn_dark'>Find out more</button>
+                </div>
+              </div>
+              {/* <div className='details__item'>
                 <div
                   className='details__preview details__preview_color'
                   data-aos='animation-scale'
@@ -115,6 +135,7 @@ export default () => {
                 </div>
                 <button className='details__btn btn btn_dark'>Find out more</button>
               </div>
+             */}
             </div>
           </div>
         </div>

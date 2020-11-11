@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const validator = require('validator');
+const mongoose = require("mongoose");
+const validator = require("validator");
 
 const messageSchema = new mongoose.Schema({
   name: {
@@ -8,21 +8,21 @@ const messageSchema = new mongoose.Schema({
   },
   email: {
     type: String,
-    required: [true, 'Please provide your email'],
+    required: [true, "Please provide your email"],
     trim: true,
     lowercase: true,
-    validate: [validator.isEmail, 'Please provide a valid email']
+    validate: [validator.isEmail, "Please provide a valid email"],
   },
   project: {
-      type: String,
-      required: true,
+    type: String,
+    required: true,
   },
   description: {
-      type: String,
-      required: true
-  }
+    type: String,
+    required: true,
+  },
 });
 
-const Message = mongoose.model('Message', messageSchema);
+const Message = mongoose.model("Message", messageSchema);
 
 module.exports = Message;
