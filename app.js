@@ -3,6 +3,7 @@ const express = require('express');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
+const dotenv = require('dotenv');
 const xss = require('xss-clean');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -10,6 +11,8 @@ const bodyParser = require('body-parser');
 const globalErrorHandler = require('./controllers/errorController');
 const messageRouter = require('./routes/messageRoutes');
 // const viewRouter = require('./routes/viewRoute');
+
+dotenv.config({ path: './config.env' });
 
 const app = express();
 app.use(bodyParser.json());
@@ -26,8 +29,8 @@ app.use(bodyParser.json());
 
 app.enable('trust proxy');
 
-app.set('view engine', 'pug');
-app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'pug');
+// app.set('views', path.join(__dirname, 'views'));
 
 app.use(cors());
 
@@ -54,9 +57,9 @@ app.use((req, res, next) => {
 });
 
 // app.use('/', viewRouter);
+// Serve static assets if in production
 app.use('/api/messages', messageRouter);
 
-// Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
 	//Set static folder
 	app.use(express.static('client/build'));
