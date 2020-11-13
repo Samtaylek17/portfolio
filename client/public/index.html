@@ -21,22 +21,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 		<title>Temitayo Ogunsusi</title>
-		<script>
-			var viewportmeta = document.querySelector('meta[name="viewport"]');
-			if (viewportmeta) {
-				if (screen.width < 375) {
-					var newScale = screen.width / 375;
-					viewportmeta.content =
-						'width=375, minimum-scale=' +
-						newScale +
-						', maximum-scale=1.0, user-scalable=no, initial-scale=' +
-						newScale +
-						'';
-				} else {
-					viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
-				}
-			}
-		</script>
+		<script src="js/viewport.js"></script>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
