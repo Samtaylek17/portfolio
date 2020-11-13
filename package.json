@@ -8,7 +8,7 @@
 		"dev": "nodemon server.js -e pug,mjs,json,js",
 		"watch:js": "parcel watch ./public/assets/js/index.js --out-dir ./public/assets/js --out-file bundle.js",
 		"build:js": "parcel build ./public/assets/js/index.js --out-dir ./public/assets/js --out-file bundle.js",
-		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build INLINE_RUNTIME_CHUNK=false --prefix client"
 	},
 	"repository": {
 		"type": "git",
