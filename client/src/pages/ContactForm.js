@@ -19,7 +19,7 @@ export default () => {
 		event.preventDefault();
 
 		await axios
-			.post('http://localhost:4005/api/messages', {
+			.post('/api/messages', {
 				name,
 				email,
 				project,
