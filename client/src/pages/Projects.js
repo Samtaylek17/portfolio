@@ -188,7 +188,7 @@ export default () => {
 								data-autoheight>
 								<Link className='cases__item' data-aos='animation-translate-y' data-aos-delay='' to='case.html'>
 									<div className='cases__preview'>
-										<img className='cases__pic' src='img/languages.png' alt='' />
+										<img className='cases__pic' src='img/programming-languages.png' alt='' />
 										<div className='cases__box'>
 											Case <br />
 											Study
