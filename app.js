@@ -29,7 +29,12 @@ app.use(bodyParser.json());
 
 app.enable('trust proxy');
 
-app.use(cors());
+// app.use(cors());
+app.use(
+	cors({
+		origin: 'https://www.samtaylek.herokuapp.com',
+	})
+);
 
 app.options('*', cors());
 
