@@ -29,14 +29,9 @@ app.use(bodyParser.json());
 
 app.enable('trust proxy');
 
-// app.set('view engine', 'pug');
-// app.set('views', path.join(__dirname, 'views'));
-
 app.use(cors());
 
 app.options('*', cors());
-
-// app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(helmet());
 
@@ -68,16 +63,6 @@ if (process.env.NODE_ENV === 'production') {
 		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 	});
 }
-
-// app.all('*', (req, res, next) => {
-//     res.status(404).render('error-page', {
-//       title: '404',
-//       page: 'Page Not Found',
-//       image: 'not-found',
-//       errorMessage: 'Page Not Found'
-//     });
-//     // next(new AppError(`Page ${req.originalUrl} not found!`, 404));
-//   });
 
 app.use(globalErrorHandler);
 
