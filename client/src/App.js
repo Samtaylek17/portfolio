@@ -8,7 +8,7 @@ import Work from './pages/Work';
 import Header from './templates/Header';
 import Details from './pages/Details';
 
-export default App = () => {
+export default () => {
 	const parallaxEffect = () => {
 		const parallax = document.querySelectorAll('.js-parallax');
 		if (parallax.length) {
