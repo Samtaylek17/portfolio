@@ -186,31 +186,31 @@ export default () => {
 							<div className='contacts__category h5'>Let’s connect</div>
 							<div className='contacts__social'>
 								<div className='contacts__box' data-aos='animation-translate-y'>
-									<Link className='contacts__link' to='#'>
-										<svg className='icon icon-instagram'>
-											<use href={sprite + '#icon-instagram'}></use>
-										</svg>
-										<div className='contacts__text'>Instagram</div>
+									<Link className='contacts__link' to={{ pathname: 'https://twitter.com/samtaylek' }} target='_blank'>
+										<i className='fab icon fa-twitter'></i>
+										<div className='contacts__text'>Twitter</div>
 									</Link>
 								</div>
 								<div className='contacts__box' data-aos='animation-translate-y' data-aos-delay='150'>
-									<Link className='contacts__link' to='#'>
-										<svg className='icon icon-instagram'>
-											<use href={sprite + '#icon-instagram'}></use>
-										</svg>
-										<div className='contacts__text'>Instagram</div>
+									<Link className='contacts__link' to={{ pathname: 'https://github.com/samtaylek17' }} target='_blank'>
+										<i className='fab icon fa-github'></i>
+										<div className='contacts__text'>Github</div>
 									</Link>
 								</div>
 								<div className='contacts__box' data-aos='animation-translate-y' data-aos-delay='300'>
-									<Link className='contacts__link' to='#'>
-										<svg className='icon icon-instagram'>
-											<use href={sprite + '#icon-instagram'}></use>
-										</svg>
-										<div className='contacts__text'>Instagram</div>
+									<Link
+										className='contacts__link'
+										to={{ pathname: 'https://www.linkedin.com/in/temitayo-ogunsusi-78b14a152/' }}
+										target='_blank'>
+										<i className='fab icon fa-linkedin'></i>
+										<div className='contacts__text'>Linkedin</div>
 									</Link>
 								</div>
 								<div className='contacts__box' data-aos='animation-translate-y' data-aos-delay='450'>
-									<Link className='contacts__link' to='#'>
+									<Link
+										className='contacts__link'
+										to={{ pathname: 'https://www.instagram.com/samtaylek/' }}
+										target='_blank'>
 										<svg className='icon icon-instagram'>
 											<use href={sprite + '#icon-instagram'}></use>
 										</svg>
